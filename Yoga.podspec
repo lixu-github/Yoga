@@ -15,7 +15,7 @@ s.version      = "0.47.1.0"
   s.platform     = :ios
   s.ios.deployment_target = '7.0'
 
-  s.source       = { :git => "https://github.com/dennis-li/Yoga.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/lixu-github/Yoga.git", :tag => s.version }
 
   s.source_files = 'Include/*.h'
   s.public_header_files = 'Include/*.h'
