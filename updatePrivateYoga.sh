@@ -46,7 +46,7 @@ createNewVersion()
     echo $newVersion$suffix
 }
 
-./buildReact.sh
+./buildYoga.sh
 verifyOperation 
 
 podName="Yoga"

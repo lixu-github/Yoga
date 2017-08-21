@@ -13,7 +13,7 @@ xcodebuild -project ${buildPath}/${projectPath} -target $target OTHER_CFLAGS="-f
 cp ${buildPath}/build/${arch}-iphonesimulator/${target}/lib${target}.a ./lib_i386_x86.a
 
 #编译armv7 arm64
-xcodebuild -project ${buildPath}/${projectPath} -target $target OTHER_CFLAGS="-fembed-bitcode" ONLY_ACTIVE_ARCH=NO -sdk iphoneos VALID_ARCHS="armv7 arm64" -configuration $arch clean build
+xcodebuild -project ${buildPath}/${projectPath} -target $target BITCODE_GENERATION_MODE=bitcode ONLY_ACTIVE_ARCH=NO -sdk iphoneos VALID_ARCHS="armv7 arm64" -configuration $arch clean build
 
 cp ${buildPath}/build/${arch}-iphoneos/$target/lib${target}.a ./lib_armv7_arm64.a
 
