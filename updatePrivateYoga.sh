@@ -53,7 +53,7 @@ podName="Yoga"
 
 #提取代码版本所在行
 git pull origin master
-versionLine=`cat React.podspec |grep -E 's.version(.*)='`
+versionLine=`cat ${podName}.podspec |grep -E 's.version(.*)='`
 
 #提取当前版本号
 version=`echo $versionLine | cut -d "\"" -f2`
