@@ -1,9 +1,15 @@
 PODS:
+  - React/BatchedBridge (0.47.1):
+    - React/Core
+    - React/cxxreact_legacy
   - React/Core (0.47.1):
     - Yoga (= 0.47.1.React)
+  - React/cxxreact_legacy (0.47.1):
+    - React/jschelpers_legacy
   - React/DevSupport (0.47.1):
     - React/Core
     - React/RCTWebSocket
+  - React/jschelpers_legacy (0.47.1)
   - React/RCTNetwork (0.47.1):
     - React/Core
   - React/RCTText (0.47.1):
@@ -13,6 +19,7 @@ PODS:
   - Yoga (0.47.1.React)
 
 DEPENDENCIES:
+  - React/BatchedBridge (from `./RNComponents/node_modules/react-native`)
   - React/Core (from `./RNComponents/node_modules/react-native`)
   - React/DevSupport (from `./RNComponents/node_modules/react-native`)
   - React/RCTNetwork (from `./RNComponents/node_modules/react-native`)
@@ -30,6 +37,6 @@ SPEC CHECKSUMS:
   React: f705239a901cb3f95445c34468e5b37b6f80a0d4
   Yoga: 13a12502dfabb4c75b914071dcb542af800deed4
 
-PODFILE CHECKSUM: dfe1977dde25c291ac2cb107ac60dba33b212d5e
+PODFILE CHECKSUM: 93815cbace7b6c4c6f698bd23174408cdb8655db
 
 COCOAPODS: 1.2.1
